@@ -1,28 +1,32 @@
 package com.ignite.bean;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 public class Person implements Serializable {
 	String name;
 	String role;
 	String email;
 	Date dob;
-	SimpleDateFormat sdf;
+	SimpleDateFormat sdf ;
 	public Person() {
 		super();
 		// TODO Auto-generated constructor stub
 		sdf = new SimpleDateFormat("dd-MM-yyyy");
 	}
-	public Person(String name, String role, String email, Date dob) {
+	public Person(String name, String role, String email, String dob) throws ParseException {
 		super();
 		this.name = name;
 		this.role = role;
 		this.email = email;
-		this.dob = dob;
 		sdf = new SimpleDateFormat("dd-MM-yyyy");
+		this.dob = sdf.parse(dob);
 	}
 	public String getName() {
 		return name;
@@ -51,12 +55,21 @@ public class Person implements Serializable {
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", role=" + role + ", email=" + email
-				+ ", dob=" + this.getDob() + "]";
+				+ ", dob=" + getDob() + "]";
 	}
 	
 	public String toCSV(){
 		return "" + name + "," + role + "," + email
-				+ "," + this.getDob() + "]";
+				+ "," + this.getDob() + "\n";
+	}
+	
+	public String toCustom() throws FileNotFoundException, IOException{
+		Properties prop = new Properties();
+		prop.load(new FileReader("config.prop"));
+		String fd = prop.getProperty("fielddelimiter");
+		String rd = prop.getProperty("recorddelimiter");
+		return "" + name + fd + role + fd + email
+				+ fd + this.getDob() + rd;
 	}
 	
 }

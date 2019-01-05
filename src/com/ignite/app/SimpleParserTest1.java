@@ -39,7 +39,8 @@ public class SimpleParserTest1 {
 		try {
 			Person person = PersonParser.getPerson(strPerson);
 			System.out.println("Parsed single person :\n"+person);
-		} catch (ParseException e) {
+		} 
+		catch (ParseException e) {
 			// TODO Auto-generated catch block
 			log.error("Exception while parsing single person : "+e);
 		}

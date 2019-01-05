@@ -42,7 +42,8 @@ public class ParseFromFile {
 				}
 			}while(ch!=-1);
 			String strPersons = personBuilder.toString();
-			log.debug(strPersons);
+			
+			log.info(strPersons);
 			
 			PersonParser personParser = new PersonParser();
 			personParser.setString(strPersons);
@@ -56,14 +57,7 @@ public class ParseFromFile {
 				log.debug(p);
 				oos.writeObject(p);
 			}
-			 
-			
-			
-			
-			
-			
 		}
-		
 		catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -72,7 +66,5 @@ public class ParseFromFile {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
-
 }
