@@ -1,0 +1,16 @@
+2019-01-05 07:53:52,981 +0530 [main] DEBUG (ParseFromFile.java:34) - Kishor, Trainer, kishorgn@gmail.com, 03-03-2003
+Koushik, Student, koushikgn@gmail.com, 10-09-2010
+Swathi, Teacher, swathi@gmail.com, 02-02-2002
+2019-01-05 07:53:53,030 +0530 [main] DEBUG (ParseFromFile.java:41) - Person [name=Kishor, role= Trainer, email= kishorgn@gmail.com, dob=03-03-2003]
+2019-01-05 07:53:53,031 +0530 [main] DEBUG (ParseFromFile.java:41) - Person [name=Koushik, role= Student, email= koushikgn@gmail.com, dob=10-09-2010]
+2019-01-05 07:53:53,031 +0530 [main] DEBUG (ParseFromFile.java:41) - Person [name=Swathi, role= Teacher, email= swathi@gmail.com, dob=02-02-2002]
+2019-01-05 07:56:23,897 +0530 [main] DEBUG (ParseFromFile.java:38) - Kishor, Trainer, kishorgn@gmail.com, 03-03-2003
+Koushik, Student, koushikgn@gmail.com, 10-09-2010
+Swathi, Teacher, swathi@gmail.com, 02-02-2002
+2019-01-05 07:56:23,925 +0530 [main] DEBUG (ParseFromFile.java:49) - Person [name=Kishor, role= Trainer, email= kishorgn@gmail.com, dob=03-03-2003]
+2019-01-05 07:56:41,366 +0530 [main] DEBUG (ParseFromFile.java:38) - Kishor, Trainer, kishorgn@gmail.com, 03-03-2003
+Koushik, Student, koushikgn@gmail.com, 10-09-2010
+Swathi, Teacher, swathi@gmail.com, 02-02-2002
+2019-01-05 07:56:41,377 +0530 [main] DEBUG (ParseFromFile.java:49) - Person [name=Kishor, role= Trainer, email= kishorgn@gmail.com, dob=03-03-2003]
+2019-01-05 07:56:41,609 +0530 [main] DEBUG (ParseFromFile.java:49) - Person [name=Koushik, role= Student, email= koushikgn@gmail.com, dob=10-09-2010]
+2019-01-05 07:56:41,612 +0530 [main] DEBUG (ParseFromFile.java:49) - Person [name=Swathi, role= Teacher, email= swathi@gmail.com, dob=02-02-2002]

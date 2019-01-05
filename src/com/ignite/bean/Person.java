@@ -1,10 +1,11 @@
 package com.ignite.bean;
 
+import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Person {
+public class Person implements Serializable {
 	String name;
 	String role;
 	String email;
